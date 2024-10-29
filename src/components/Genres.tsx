@@ -1,8 +1,10 @@
+import { useParams } from "react-router-dom"
 
 const Genres = () => {
+  const params = useParams()
   return (
     <div>
-      Genres
+      Genres: {params.genresName}
     </div>
   )
 }

@@ -12,10 +12,10 @@ function App() {
           <div className="App">
             <Routes>
               <Route path='/' element={<Discover />}></Route>
-              <Route path='/discover' element={<Discover />}></Route>
-              <Route path='/genres' element={<Genres />}></Route>
-              <Route path='/movie' element={<Movie />}></Route>
-              <Route path='/search' element={<Search />}></Route>
+              <Route path='/discover/:discoverName' element={<Discover />}></Route>
+              <Route path='/genres/:genresName' element={<Genres />}></Route>
+              <Route path='/movie/:movieId' element={<Movie />}></Route>
+              <Route path='/search/:keywords' element={<Search />}></Route>
               <Route path='*' element={<Navigate to="/"/>}/>
             </Routes>
           </div>
