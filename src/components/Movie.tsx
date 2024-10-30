@@ -5,7 +5,7 @@ const Movie = () => {
 
   return (
     <div>
-      Movie: {params.movieId}
+      {params.movieId}
     </div>
   )
 }

@@ -1,0 +1,64 @@
+
+/* ADD DISCOVER */
+.discover-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    color: var(--color-primary-dark);
+    border-right: 1px solid var(--border-color);
+}
+
+.discover-img {
+    width: 100%;
+    height: 16rem;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.discover-img img {
+    max-width: 84%;
+}
+
+
+.discover-list {
+    font-size: 16px;
+    color: #263238;
+    letter-spacing: -0.5px;
+    margin: 20px 0px 10px 0rem;
+}
+
+.discover-item {
+    text-decoration: none;
+    display: block;
+    outline: none;
+    margin-bottom: 0.5rem;
+}
+
+.discover-add {
+    padding: 9px 0;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+    opacity: 1;
+    color: #adb9bf;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.discover-add:hover {
+    border: 1px solid;
+    color: rgb(38, 50, 56);
+}
+
+.column-left .discover-page .discover-item .discover-add i {
+    padding: 0 15px;
+}
+
+
+
+/* END DISCOVER */
+
