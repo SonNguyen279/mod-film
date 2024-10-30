@@ -58,7 +58,17 @@
     padding: 0 15px;
 }
 
-
-
 /* END DISCOVER */
+
+/* SEARCH ADD */
+.column-search {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 2rem;
+}
+
+
+
+/* SEARCH END */
 

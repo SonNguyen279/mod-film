@@ -9,6 +9,10 @@
     width: 100%;
 }
 
+.w-full {
+    width: 100%;
+}
+
 .column-left {
     width: 13%;
     float: left;

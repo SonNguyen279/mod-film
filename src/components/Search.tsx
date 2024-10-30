@@ -1,13 +1,9 @@
-import { useParams } from "react-router-dom"
+import { useParams } from "react-router-dom";
 
 const Search = () => {
-  const params = useParams()
+  const params = useParams();
 
-  return (
-    <div>
-      Search: {params.keywords}
-    </div>
-  )
-}
+  return <div>Search: {params.keywords}</div>;
+};
 
-export default Search
+export default Search;
