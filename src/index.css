@@ -11,6 +11,7 @@
 
 .w-full {
     width: 100%;
+    display: flex;
 }
 
 .column-left {
@@ -22,6 +23,7 @@
 .column-right {
     width: 87%;
     float: right;
+    
 }
 
 * {

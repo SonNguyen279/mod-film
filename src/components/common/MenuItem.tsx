@@ -9,6 +9,7 @@ const MenuItem = ({ hrefName, iconName, title }: IDiscoverItemProps) => {
     <a className="discover-item" href={hrefName}>
       <div className="discover-add">
         <i className={`fa-solid ${iconName}`}></i>
+
         {title}
       </div>
     </a>

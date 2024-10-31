@@ -156,7 +156,12 @@ const Discover = () => {
           ))}
         </div>
       </div>
-      <div className="column-search"></div>
+      <div className="column-search">
+        <form className="search-item">
+          <button type="submit" className="search-button"></button>
+          {/* <input placeholder="Search for a movie" className="search-input" /> */}
+        </form>
+      </div>
       <div className="column-right"></div>
     </div>
   );

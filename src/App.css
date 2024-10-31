@@ -65,10 +65,47 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    padding: 2rem;
+    padding: 20px;
 }
 
+.search-item {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 2rem;
+    cursor: pointer;
+    padding: 6px;
+    height: 2rem;
+    outline: none;
+    border-radius: 10rem;
+    transition: 300ms;
+    background-color: #263238;
+}
+
+.search-button {
+    line-height: 1;
+    pointer-events: none;
+    cursor: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.column-search .search-item .search-button i {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
 
 
 /* SEARCH END */
 
+/* ADD MOVIES */
+
+
+/* END MOVIES */
