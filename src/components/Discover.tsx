@@ -1,10 +1,17 @@
 // import { useParams } from "react-router-dom";
 
+import { faHeart } from "@fortawesome/free-regular-svg-icons";
 import MenuItem from "./common/MenuItem";
+import {
+  faCalendar,
+  faCircleDot,
+  faSquarePollVertical,
+} from "@fortawesome/free-solid-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface IDiscoverProps {
   href: string;
-  icon: string;
+  icon: IconProp;
   title: string;
 }
 
@@ -13,17 +20,17 @@ const Discover = () => {
   const discoverData = [
     {
       href: "/discover/popular",
-      icon: "fa-heart",
+      icon: faHeart,
       title: "Popular",
     },
     {
       href: "/discover/top rated",
-      icon: "fa-signal-bars",
+      icon: faSquarePollVertical,
       title: "Top rated",
     },
     {
       href: "/discover/upcoming",
-      icon: "fa-calendar-days",
+      icon: faCalendar,
       title: "Upcoming",
     },
   ];
@@ -31,97 +38,97 @@ const Discover = () => {
   const genresData = [
     {
       href: "/genres/action",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Action",
     },
     {
       href: "/genres/adventure",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Adventure",
     },
     {
       href: "/genres/animation",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Animation",
     },
     {
       href: "/genres/comedy",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Comedy",
     },
     {
       href: "/genres/crime",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Crime",
     },
     {
       href: "/genres/documentary",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Documentary",
     },
     {
       href: "/genres/drama",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Drama",
     },
     {
       href: "/genres/family",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Family",
     },
     {
       href: "/genres/fantasy",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Fantasy",
     },
     {
       href: "/genres/history",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "History",
     },
     {
       href: "/genres/horror",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Horror",
     },
     {
       href: "/genres/music",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Music",
     },
     {
       href: "/genres/mystery",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Mystery",
     },
     {
       href: "/genres/romance",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Romance",
     },
     {
       href: "/genres/science fiction",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Science fiction",
     },
     {
       href: "/genres/tv movie",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "TV Movie",
     },
     {
       href: "/genres/thriller",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Thriller",
     },
     {
       href: "/genres/war",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "War",
     },
     {
       href: "/genres/western",
-      icon: "fa-circle-stop",
+      icon: faCircleDot,
       title: "Western",
     },
   ];
@@ -157,12 +164,74 @@ const Discover = () => {
         </div>
       </div>
       <div className="column-search">
-        <form className="search-item">
-          <button type="submit" className="search-button"></button>
-          {/* <input placeholder="Search for a movie" className="search-input" /> */}
+        <form className="search-item search-item-action">
+          <button className="search-button search-button-action"></button>
+          <input
+            placeholder="Search for a movie"
+            className="search-input search-input-action"
+          />
         </form>
       </div>
-      <div className="column-right"></div>
+      <div className="column-right">
+        <div className="right-full">
+          <div className="header-name">
+            <h1>POPULAR</h1>
+            <p>MOVIES</p>
+          </div>
+          <div className="list-movie">
+            <a className="one-movie">
+              <img
+                src="https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg"
+                alt=""
+              />
+              <div className="movie-name">
+                <h2>Venom: The Last Dance</h2>
+              </div>
+              <div className="evaluate-movie"></div>
+            </a>
+            <a className="one-movie">
+              <img
+                src="https://image.tmdb.org/t/p/w342/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg"
+                alt=""
+              />
+              <div className="movie-name">
+                <h2>Venom: The Last Dance</h2>
+              </div>
+              <div className="evaluate-movie"></div>
+            </a>
+            <a className="one-movie">
+              <img
+                src="https://image.tmdb.org/t/p/w342/63xYQj1BwRFielxsBDXvHIJyXVm.jpg"
+                alt=""
+              />
+              <div className="movie-name">
+                <h2>Venom: The Last Dance</h2>
+              </div>
+              <div className="evaluate-movie"></div>
+            </a>
+            <a className="one-movie">
+              <img
+                src="https://image.tmdb.org/t/p/w342/qrwI2T844nrBUv3eDwQZRDdgSFs.jpg"
+                alt=""
+              />
+              <div className="movie-name">
+                <h2>Venom: The Last Dance</h2>
+              </div>
+              <div className="evaluate-movie"></div>
+            </a>
+            <a className="one-movie">
+              <img
+                src="https://image.tmdb.org/t/p/w342/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
+                alt=""
+              />
+              <div className="movie-name">
+                <h2>Venom: The Last Dance</h2>
+              </div>
+              <div className="evaluate-movie"></div>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

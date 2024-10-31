@@ -23,7 +23,7 @@
 .column-right {
     width: 87%;
     float: right;
-    
+    display: block;
 }
 
 * {

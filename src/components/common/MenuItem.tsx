@@ -1,6 +1,9 @@
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 interface IDiscoverItemProps {
   hrefName: string;
-  iconName: string;
+  iconName: IconProp;
   title: string;
 }
 
@@ -8,8 +11,7 @@ const MenuItem = ({ hrefName, iconName, title }: IDiscoverItemProps) => {
   return (
     <a className="discover-item" href={hrefName}>
       <div className="discover-add">
-        <i className={`fa-solid ${iconName}`}></i>
-
+        <FontAwesomeIcon icon={iconName} className="discover-icon" />
         {title}
       </div>
     </a>
