@@ -5,9 +5,13 @@ import MenuItem from "./common/MenuItem";
 import {
   faCalendar,
   faCircleDot,
+  faMagnifyingGlass,
   faSquarePollVertical,
 } from "@fortawesome/free-solid-svg-icons";
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
+import MovieItem from "./common/MovieItem";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IMovieItemProps } from "../interfaces";
 
 interface IDiscoverProps {
   href: string;
@@ -133,6 +137,39 @@ const Discover = () => {
     },
   ];
 
+  const movieData = [
+    {
+      hrefMovie: "/movie/912649",
+      imgUrl: "https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+      title: "Venom: The Last Dance",
+      point: 9,
+    },
+    {
+      hrefMovie: "/movie/912649",
+      imgUrl: "https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+      title: "Venom: The Last Dance",
+      point: 8,
+    },
+    {
+      hrefMovie: "/movie/912649",
+      imgUrl: "https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+      title: "Venom: The Last Dance",
+      point: 10,
+    },
+    {
+      hrefMovie: "/movie/912649",
+      imgUrl: "https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+      title: "Venom: The Last Dance",
+      point: 7,
+    },
+    {
+      hrefMovie: "/movie/912649",
+      imgUrl: "https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+      title: "Venom: The Last Dance",
+      point: 6,
+    },
+  ];
+
   return (
     <div className="w-full">
       <div className="column-left">
@@ -165,7 +202,9 @@ const Discover = () => {
       </div>
       <div className="column-search">
         <form className="search-item search-item-action">
-          <button className="search-button search-button-action"></button>
+          <button className="search-button search-button-action">
+            <FontAwesomeIcon icon={faMagnifyingGlass} className="search-icon" />
+          </button>
           <input
             placeholder="Search for a movie"
             className="search-input search-input-action"
@@ -179,56 +218,15 @@ const Discover = () => {
             <p>MOVIES</p>
           </div>
           <div className="list-movie">
-            <a className="one-movie">
-              <img
-                src="https://image.tmdb.org/t/p/w342/k42Owka8v91trK1qMYwCQCNwJKr.jpg"
-                alt=""
+            {movieData.map((item: IMovieItemProps, index: number) => (
+              <MovieItem
+                key={`movie-${index}`}
+                hrefMovie={item.hrefMovie}
+                imgUrl={item.imgUrl}
+                title={item.title}
+                point={item.point}
               />
-              <div className="movie-name">
-                <h2>Venom: The Last Dance</h2>
-              </div>
-              <div className="evaluate-movie"></div>
-            </a>
-            <a className="one-movie">
-              <img
-                src="https://image.tmdb.org/t/p/w342/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg"
-                alt=""
-              />
-              <div className="movie-name">
-                <h2>Venom: The Last Dance</h2>
-              </div>
-              <div className="evaluate-movie"></div>
-            </a>
-            <a className="one-movie">
-              <img
-                src="https://image.tmdb.org/t/p/w342/63xYQj1BwRFielxsBDXvHIJyXVm.jpg"
-                alt=""
-              />
-              <div className="movie-name">
-                <h2>Venom: The Last Dance</h2>
-              </div>
-              <div className="evaluate-movie"></div>
-            </a>
-            <a className="one-movie">
-              <img
-                src="https://image.tmdb.org/t/p/w342/qrwI2T844nrBUv3eDwQZRDdgSFs.jpg"
-                alt=""
-              />
-              <div className="movie-name">
-                <h2>Venom: The Last Dance</h2>
-              </div>
-              <div className="evaluate-movie"></div>
-            </a>
-            <a className="one-movie">
-              <img
-                src="https://image.tmdb.org/t/p/w342/b33nnKl1GSFbao4l3fZDDqsMx0F.jpg"
-                alt=""
-              />
-              <div className="movie-name">
-                <h2>Venom: The Last Dance</h2>
-              </div>
-              <div className="evaluate-movie"></div>
-            </a>
+            ))}
           </div>
         </div>
       </div>
